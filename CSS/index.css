@@ -95,7 +95,6 @@ lord-icon {
 /* Main Section Start */
 #main {
     height: calc(100vh - 113.188px);
-    position: fixed;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
