@@ -93,9 +93,9 @@ lord-icon {
 /* Header And Nav Section End */
 
 /* Main Section Start */
-
 #main {
     height: calc(100vh - 113.188px);
+    position: fixed;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -381,6 +381,10 @@ select option {
         font-size: 0.8rem;
     }
 
+    #main {
+        height: calc(100vh - 89px);
+    }
+
     .font-s {
         font-size: 0.5rem;
     }
@@ -401,6 +405,10 @@ select option {
 
     #img {
         width: 80px;
+    }
+
+    #main {
+        height: calc(100vh - 89px);
     }
 
     #about-head {
@@ -443,14 +451,20 @@ select option {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);
     }
-    
-    .mail p ,.location p,.phone p{
+
+    .mail p,
+    .location p,
+    .phone p {
         font-size: 0.7rem;
     }
+
     .location p:nth-child(3) {
         font-size: 0.690rem;
     }
-    .mail i,.location a,.phone a{
+
+    .mail i,
+    .location a,
+    .phone a {
         font-size: 0.7rem;
     }
 }
@@ -498,6 +512,10 @@ select option {
 
     #img {
         width: 100px;
+    }
+
+    #main {
+        height: calc(100vh - 99px);
     }
 
     #about-head {
@@ -577,6 +595,10 @@ select option {
         width: 120px;
     }
 
+    #main {
+        height: calc(100vh - 108.188px);
+    }
+
     #about-head {
         font-size: 0.74rem;
     }
@@ -593,7 +615,7 @@ select option {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
-    
+
 }
 
 /* Large devices (desktops, 992px and up) */
