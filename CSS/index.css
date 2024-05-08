@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Scroll Bar Design Start */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(13 110 253);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(11, 86, 199);
+}
+
+/* Scroll Bar Design Start */
+
+/* Header And Nav section Start */
+
+.container-fluid img.img {
+    height: 60px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.fa-envelope {
+    font-size: 20px;
+}
+
+.f-s {
+    font-size: 0.8rem;
+}
+
+.modal-backdrop {
+    z-index: 1;
+}
+
+.navbar-nav>.f-s>.nav-link::after {
+    content: '';
+    display: block;
+    background-color: white;
+    width: 100%;
+    transform: scale(0);
+    height: 2px;
+    transition: all 0.3s linear;
+}
+
+.navbar-nav>.f-s>.nav-link:hover::after {
+    transform: scale(1);
+}
+
+.fa-envelope {
+    font-size: 18px;
+}
+
+lord-icon {
+    width: 25px;
+    height: 25px;
+    padding-top: 3px;
+}
+
+.navbar-toggler {
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/* Header And Nav Section End */
+
+/* Main Section Start */
+
+#main {
+    height: calc(100vh - 113.188px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* Main Section End */
+
+/* Carousel Section Start */
+
+.fa-arrow-left,
+.fa-arrow-right {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.font-s {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.font-btn-s {
+    font-size: 1rem;
+}
+
+.carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    bottom: auto;
+}
+
+/* Carousel Section End */
+
+/* About Section Start */
+.u-l::after {
+    content: '';
+    display: block;
+    background-color: rgb(13 110 253);
+    width: 100%;
+    height: 2px;
+    margin: 12px 0 20px 0;
+}
+
+.f-w {
+    font-size: 1.75rem;
+}
+
+#img {
+    width: 140px;
+}
+
+#about-head {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* About Section End */
+
+/* Recently Closed Lone Section Start */
+
+
+
+/* Recently Closed Lone Section End */
+
+/* Latest News Section Start */
+
+.width-t {
+    width: 70%;
+}
+
+.width-img {
+    width: 30%;
+}
+
+#z-1 {
+    background-image: url(../IMGs/IMG-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+#z-2 {
+    background-image: url(../IMGs/IMG-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+#z-3 {
+    z-index: 1;
+}
+
+/* Latest News Section End */
+
+/* Loan Programs Section Start */
+
+.fa-money-bill-transfer,
+.fa-scale-balanced,
+.fa-building-wheat,
+.fa-handshake,
+.fa-circle-up,
+.fa-tractor,
+.fa-boxes-stacked,
+.fa-file-invoice,
+.fa-circle-dollar-to-slot {
+    font-size: 32px;
+    color: white;
+}
+
+.blue-r {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 30px;
+}
+
+.right-fs {
+    font-size: 0.66rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* Loan Programs Section End */
+
+
+/* Our Team Section Start */
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.center-hover {
+    width: 100%;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, 215%);
+    /* text-align: center; */
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#z_-1 {
+    transition: all .3s ease-in-out;
+    z-index: -1;
+}
+
+.card:hover .center-hover {
+    transform: translate(-50%, 168%);
+}
+
+.card:hover #z_-1 {
+    background-color: rgb(13 110 253) !important;
+}
+
+.card:hover .center-hover h5,
+.card:hover .center-hover a,
+.card:hover .center-hover i,
+.card:hover .center-hover p {
+    color: white !important;
+}
+
+.center-hover h5 {
+    text-align: center;
+}
+
+.center-hover p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.center-hover a {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    border: 1px solid white;
+    border-radius: 50%;
+    line-height: 0.6;
+    padding: 10px;
+}
+
+/* Our Team Section End */
+
+/* Contact Us Section Start */
+
+#contact-bg {
+    background-image: url(../IMGs/Contact-Bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+.location>a,
+.mail>a,
+.phone>a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-logo,
+.location,
+.mail,
+.phone {
+    margin-bottom: 1rem;
+}
+
+.location p:nth-child(3) {
+    font-size: 0.88rem;
+}
+
+.form-control,
+.form-select {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: rgb(236, 233, 233);
+
+}
+
+select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.213);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.form-control:focus,
+.form-select:focus {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    outline: none;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0.25);
+}
+
+/* Contact Us Section End */
+
+/* Media Querys */
+/* Small devices (Phone , 220px and up) */
+@media (min-width: 220px) and (max-width: 575px) {
+    .container-fluid img.img {
+        height: 45px;
+    }
+
+    .wrap-mb {
+        display: none !important;
+    }
+
+    .f-s {
+        font-size: 0.5rem;
+    }
+
+    #f-s {
+        font-size: 0.8rem;
+    }
+
+    .font-s {
+        font-size: 0.5rem;
+    }
+
+    .font-btn-s {
+        font-size: 0.3rem;
+    }
+
+    .fa-arrow-left,
+    .fa-arrow-right {
+        padding: 4px;
+        font-size: 0.5rem;
+    }
+
+    .f-w {
+        font-size: 1.0rem;
+    }
+
+    #img {
+        width: 80px;
+    }
+
+    #about-head {
+        font-size: 0.70rem;
+    }
+
+    .width-t {
+        width: 100%;
+    }
+
+    .width-img {
+        width: 100%;
+    }
+
+    #f-d-c-r {
+        flex-direction: column-reverse !important;
+    }
+
+    .fa-money-bill-transfer,
+    .fa-scale-balanced,
+    .fa-building-wheat,
+    .fa-handshake,
+    .fa-circle-up,
+    .fa-tractor,
+    .fa-boxes-stacked,
+    .fa-file-invoice,
+    .fa-circle-dollar-to-slot {
+        font-size: 25px;
+    }
+
+    .blue-r {
+        padding: 25px;
+    }
+
+    .right-fs {
+        font-size: 0.55rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+    
+    .mail p ,.location p,.phone p{
+        font-size: 0.7rem;
+    }
+    .location p:nth-child(3) {
+        font-size: 0.690rem;
+    }
+    .mail i,.location a,.phone a{
+        font-size: 0.7rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .f-s {
+        font-size: 0.45rem;
+    }
+
+    #f-s {
+        font-size: 0.8rem;
+    }
+
+    .container-fluid img.img {
+        height: 55px;
+    }
+
+    .fa-envelope {
+        font-size: 14px;
+    }
+
+    lord-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .font-s {
+        font-size: 0.9rem;
+    }
+
+    .font-btn-s {
+        font-size: 0.5rem;
+    }
+
+    .fa-arrow-left,
+    .fa-arrow-right {
+        padding: 7px;
+        font-size: 0.8rem;
+    }
+
+    .f-w {
+        font-size: 1.30rem;
+    }
+
+    #img {
+        width: 100px;
+    }
+
+    #about-head {
+        font-size: 0.70rem;
+    }
+
+    .width-t {
+        width: 100%;
+    }
+
+    .width-img {
+        width: 100%;
+    }
+
+    #f-d-c-r {
+        flex-direction: column-reverse !important;
+    }
+
+    .fa-money-bill-transfer,
+    .fa-scale-balanced,
+    .fa-building-wheat,
+    .fa-handshake,
+    .fa-circle-up,
+    .fa-tractor,
+    .fa-boxes-stacked,
+    .fa-file-invoice,
+    .fa-circle-dollar-to-slot {
+        font-size: 28px;
+    }
+
+    .blue-r {
+        padding: 28px;
+    }
+
+    .right-fs {
+        font-size: 0.55rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .f-s {
+        font-size: 0.8rem;
+    }
+
+    .container-fluid img.img {
+        height: 55px;
+    }
+
+    .fa-envelope {
+        font-size: 18px;
+    }
+
+    lord-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .font-s {
+        font-size: 1rem;
+    }
+
+    .font-btn-s {
+        font-size: 0.6rem;
+    }
+
+    .f-w {
+        font-size: 1.50rem;
+    }
+
+    #img {
+        width: 120px;
+    }
+
+    #about-head {
+        font-size: 0.74rem;
+    }
+
+    .width-t {
+        width: 50%;
+    }
+
+    .width-img {
+        width: 50%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .font-s {
+        font-size: 1.2rem;
+    }
+
+    .font-btn-s {
+        font-size: 0.8rem;
+    }
+
+    #about-head {
+        font-size: 0.85rem;
+    }
+
+    .width-t {
+        width: 65%;
+    }
+
+    .width-img {
+        width: 35%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1599px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="IMGs/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <!-- Page Title -->
+    <title>MIDAS FINANCIAL GROUP</title>
+</head>
+
+<body>
+    <!-- Header And Nav Section Start -->
+    <header class="container-fluid pe-0 ps-0 position-sticky top-0 z-3 bg-white">
+        <!-- Top Head Start -->
+        <div class="ps-3 pe-3 container-fluid container-lg d-flex justify-content-between align-items-center flex-wrap">
+            <div><img class="img" src="IMGs/Logo.png" alt="Logo"></div>
+            <div class="d-flex gap-4 align-items-center">
+                <div class="d-flex gap-4 align-items-center wrap-mb">
+                    <div>
+                        <a class=" f-s text-primary text-decoration-none d-flex align-items-center gap-3"
+                            href="tel:00 123 456 7890">
+                            <div>
+                                <lord-icon src="https://cdn.lordicon.com/srsgifqc.json" trigger="hover"
+                                    colors="primary:#2174e1">
+                                </lord-icon>
+                            </div>
+                            <div>
+                                <p class="mb-0">Call Us</p>
+                                <p class="mb-0 text-black">00 123 456 7890</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="f-s text-primary text-decoration-none d-flex align-items-center gap-3"
+                            href="mailto:inqury@midasfinancialgroup.com">
+                            <div><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <p class="mb-0">Email On</p>
+                                <p class="mb-0 text-black">inqury@midasfinancialgroup.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div> -->
+                <button type="button" id="ani-butt" class=" f-s btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">GET A QUOTE</button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Quote</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                "Goals Are The Fuel In The Furnace Of Achievement"
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- Top Head End -->
+
+        <!-- Nav Section Start -->
+        <nav class="navbar navbar-expand-md bg-primary">
+            <div class="container-fluid container-lg justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars-staggered" style="color: white;"></i>
+                </button>
+                <div class="offcanvas offcanvas-end bg-primary navbar-collapse-offcanvas" id="navbarSupportedContent2">
+                    <div class="offcanvas-header">
+                        <div><img class="img" src="IMGs/Logo.png" alt="Logo"></div>
+                        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav m-auto mb-lg-0 align-items-center justify-content-between"
+                            style="width: 100%;">
+                            <li id="f-s" class="f-s fw-medium nav-item">
+                                <a class="text-white nav-link" href="#carouselExampleCaptions">HOME</a>
+                            </li>
+                            <li id="f-s" class="f-s fw-medium nav-item">
+                                <a class="text-white nav-link" href="#About">ABOUT US</a>
+                            </li>
+                            <li id="f-s" class="f-s fw-medium nav-item">
+                                <a class="text-white nav-link" href="#loan">LOAN PROGRAMS</a>
+                            </li>
+                            <li id="f-s" class="f-s fw-medium nav-item">
+                                <a class="text-white nav-link" href="#CRITERIA">LOAN CRITERIA</a>
+                            </li>
+                            <li id="f-s" class="f-s fw-medium nav-item">
+                                <a class="text-white nav-link" href="#News">NEWS</a>
+                            </li>
+                            <li id="f-s" class="f-s fw-medium nav-item">
+                                <a class="text-white nav-link" href="#">APPLY NOW</a>
+                            </li>
+                            <li id="f-s" class="f-s fw-medium nav-item">
+                                <a class="text-white nav-link" href="#Contact">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Section End -->
+    </header>
+    <!-- Header And Nav Section End -->
+
+    <!-- Main Section Start -->
+    <main id="main" class="container-fluid p-0">
+
+        <!-- Carousel Section Start -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMGs/IMG-1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption  d-block">
+                        <h5 class="font-s">WE ARE SERVICE FINANCE COMPANY<br>SPECIALIZING IN OBTAINING CAPITAL<br>FOR
+                            SMAILL BUSINESS.</h5>
+                        <button class="m-1 font-btn-s btn btn-primary border-light">CONTACT US TODAY</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMGs/IMG-2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption  d-block">
+                        <h5 class="font-s">Empowering small businesses with<br>tailored capital solutions,
+                            fueling<br>growth and prosperity endeavors.</h5>
+                        <button class="m-1 font-btn-s btn btn-primary border-light">CONTACT US TODAY</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMGs/IMG-3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption  d-block">
+                        <h5 class="font-s">Driving small business success<br>through customized capital
+                            solutions,<br>igniting growth and prosperity.</h5>
+                        <button class="m-1 font-btn-s btn btn-primary border-light">CONTACT US TODAY</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Carousel Section End -->
+
+        <!-- About Section Start -->
+        <section id="About" class="container-fluid container-lg">
+            <div class="pt-md-5 pt-sm-4 pt-3 pb-md-5 pb-sm-4 pb-3">
+                <div class="d-flex flex-row align-items-center justify-content-center">
+                    <div class="u-l">
+                        <span class="fw-bold f-w title d-inline-block">ABOUT </span>
+                        <span><img src="./IMGs/Logo.png" alt="" id="img"></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-center gap-4">
+                    <p id="about-head" class="text-center text-primary">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sint commodi nobis corporis officia, possimus quasi rem eaque eos</p>
+                    <p id="about-head" class="fw-normal text-center">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, blanditiis quos sint
+                        voluptatum ipsa odio laudantium laborum, eveniet perferendis error nam nisi explicabo aliquam
+                        debitis rem architecto ex, accusamus totam. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Eligendi quidem ipsam ipsum sint, rerum eum voluptas tempore veniam, ipsa, officia quod
+                        autem nihil pariatur ullam maiores sapiente dolorem repellat praesentium.</p>
+                    <button id="a-b" class="font-btn-s btn btn-sm btn-primary border-light">READ MORE</button>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Recently Closed Lone Section Start -->
+        <section id="CRITERIA" class="container-fluid bg-body-tertiary">
+            <div class="container-fluid container-lg">
+                <div class="pt-md-5 pt-sm-4 pt-3 pb-md-5 pb-sm-4 pb-3">
+                    <div class="text-center">
+                        <p class="u-l fw-bold f-w d-inline-block">RECENTLY <span class="text-primary">CLOSED
+                                LOANS</span></p>
+                    </div>
+                    <div class="mt-sm-2 container-1">
+                        <div class="card__container swiper">
+                            <div class="card__content">
+                                <div class="swiper-wrapper">
+                                    <article class="card__article swiper-slide">
+                                        <div class="card__data">
+                                            <h3 class="card__name">OFFICE BUILDING</h3>
+                                            <p class="m-3 card__description">
+                                                $ 2,750,000
+                                            </p>
+                                            <p class="">
+                                                Discounted Payoff
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="card__article swiper-slide">
+                                        <div class="card__data">
+                                            <h3 class="card__name">MIXED USE</h3>
+                                            <p class="m-3 card__description">
+                                                $ 1,125,000
+                                            </p>
+                                            <p class="">
+                                                Refnaince New York
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="card__article swiper-slide">
+                                        <div class="card__data">
+                                            <h3 class="card__name">MIXED USE DEVELOPMENT</h3>
+                                            <p class="m-3 card__description">
+                                                $ 12,550,000
+                                            </p>
+                                            <p class="">
+                                                Property improvement
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="card__article swiper-slide">
+                                        <div class="card__data">
+                                            <h3 class="card__name">OFFICE BUILDING</h3>
+                                            <p class="m-3 card__description">
+                                                $ 2,750,000
+                                            </p>
+                                            <p class="">
+                                                Discounted Payoff
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="card__article swiper-slide">
+                                        <div class="card__data">
+                                            <h3 class="card__name">MIXED USE</h3>
+                                            <p class="m-3 card__description">
+                                                $ 1,125,000
+                                            </p>
+                                            <p class="">
+                                                Refnaince New York
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="card__article swiper-slide">
+                                        <div class="card__data">
+                                            <h3 class="card__name">MIXED USE DEVELOPMENT</h3>
+                                            <p class="m-3 card__description">
+                                                $ 12,550,000
+                                            </p>
+                                            <p class="">
+                                                Property improvement
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-next">
+                                <i class="bg-white fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <i class="bg-white fa-solid fa-arrow-left" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recently Closed Lone Section End-->
+
+        <!-- Latest News Section Start -->
+        <section id="News" class="container-fluid p-0">
+            <div class="pt-md-5 pt-sm-4 pt-3 overflow-hidden">
+                <div class="text-center">
+                    <p class="u-l fw-bold f-w d-inline-block">LATEST <span class="text-primary">NEWS</span></p>
+                </div>
+                <div class="left w-100 d-flex flex-md-row flex-column mt-2">
+                    <div class="pt-5 ps-4 pb-5 pe-4 text-white width-t position-relative">
+                        <div id="z-1" class="position-absolute w-100 h-100 top-0 start-0">
+                            <div class="position-absolute bg-primary w-100 h-100 top-0 start-0 opacity-50 " id="z-3">
+                            </div>
+                        </div>
+                        <h5 class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, soluta ut. Quam,
+                            non
+                            sapiente neque a exercitationem ea? Earum culpa quasi sit amet consectetur, adipisicing
+                            elit. Ab,
+                            soluta ut</h5>
+                        <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam
+                            dignissimos magnam
+                            commodi
+                            animi quam quidem. Inventore non omnis praesentium tempore suscipit eos voluptatum sint
+                            cupiditate
+                            reprehenderit quasi, tempora aperiam rerum nihil maxime natus autem enim aut aliquam cum
+                            debitis
+                            ipsam ut iusto culpa! Commodi, dolorum Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Distinctio porro odio, est ut vel quae ex laboriosam? Inventore esse facere quo</p>
+                        <a class="fw-bold m-0  text-white text-decoration-none " href="#">Read More...</a>
+                    </div>
+                    <div class="width-img">
+                        <img class="h-100 object-fit-cover w-100 " src="./IMGs/IMG-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right w-100 d-flex flex-md-row flex-column" id="f-d-c-r">
+                    <div class="width-img">
+                        <img class="h-100 object-fit-cover w-100 " src="./IMGs/IMG-7.jpg" alt="">
+                    </div>
+                    <div class="pt-5 ps-4 pb-5 pe-4 text-white width-t position-relative">
+                        <div id="z-2" class="position-absolute w-100 h-100 top-0 start-0">
+                            <div class="position-absolute bg-primary w-100 h-100 top-0 start-0 opacity-50 " id="z-3">
+                            </div>
+                        </div>
+                        <h5 class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, soluta ut. Quam,
+                            non
+                            sapiente neque a exercitationem ea? Earum culpa quasi sit amet consectetur, adipisicing
+                            elit. Ab,
+                            soluta ut</h5>
+                        <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam
+                            dignissimos magnam
+                            commodi
+                            animi quam quidem. Inventore non omnis praesentium tempore suscipit eos voluptatum sint
+                            cupiditate
+                            reprehenderit quasi, tempora aperiam rerum nihil maxime natus autem enim aut aliquam cum
+                            debitis
+                            ipsam ut iusto culpa! Commodi, dolorum Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Distinctio porro odio, est ut vel quae ex laboriosam? Inventore esse facere quo</p>
+                        <a class="fw-bold m-0  text-white text-decoration-none " href="#">Read More...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest News Section End -->
+
+        <!-- Loan Programs Section Start -->
+        <section id="loan" class="container-fluid bg-body-tertiary">
+            <div class="container-fluid container-lg">
+                <div class="pt-md-5 pt-sm-4 pt-3 pb-md-5 pb-sm-4 pb-3">
+                    <div class="text-center">
+                        <p class="u-l fw-bold f-w d-inline-block">LOAN <span class="text-primary">PROGRAMS</span></p>
+                    </div>
+                    <div class="grid gap-3">
+                        <div class="p-3 d-flex align-items-center justify-content-center gap-4">
+                            <div class="blue-r bg-primary"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                            <div class="right-cont">
+                                <h6 class="right-fs">Working Capital</h6>
+                                <p class="right-fs m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                                    modi, nesciunt maxime nihil aliquam provident odio </p>
+                            </div>
+                        </div>
+                        <div class="p-3 d-flex align-items-center justify-content-center gap-4">
+                            <div class="blue-r bg-primary"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <div class="right-cont">
+                                <h6 class="right-fs">Dirt Consolidations</h6>
+                                <p class="right-fs m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                                    modi, nesciunt maxime nihil aliquam provident odio </p>
+                            </div>
+                        </div>
+                        <div class="p-3 d-flex align-items-center justify-content-center gap-4">
+                            <div class="blue-r bg-primary"><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
+                            <div class="right-cont">
+                                <h6 class="right-fs">Payroll</h6>
+                                <p class="right-fs m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                                    modi, nesciunt maxime nihil aliquam provident odio </p>
+                            </div>
+                        </div>
+                        <div class="p-3 d-flex align-items-center justify-content-center gap-4">
+                            <div class="blue-r bg-primary"><i class="fa-solid fa-file-invoice"></i></div>
+                            <div class="right-cont">
+                                <h6 class="right-fs">Operating Expenses</h6>
+                                <p class="right-fs m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                                    modi, nesciunt maxime nihil aliquam provident odio </p>
+                            </div>
+                        </div>
+                        <div class="p-3 d-flex align-items-center justify-content-center gap-4">
+                            <div class="blue-r bg-primary"><i class="fa-solid fa-boxes-stacked"></i></div>
+                            <div class="right-cont">
+                                <h6 class="right-fs">Inventory</h6>
+                                <p class="right-fs m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                                    modi, nesciunt maxime nihil aliquam provident odio </p>
+                            </div>
+                        </div>
+                        <div class="p-3 d-flex align-items-center justify-content-center gap-4">
+                            <div class="blue-r bg-primary"><i class="fa-solid fa-tractor"></i></div>
+                            <div class="right-cont">
+                                <h6 class="right-fs">Equipment Financing</h6>
+                                <p class="right-fs m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                                    modi, nesciunt maxime nihil aliquam provident odio </p>
+                            </div>
+                        </div>
+                        <div class="p-3 d-flex align-items-center justify-content-center gap-4">
+                            <div class="blue-r bg-primary"><i class="fa-solid fa-building-wheat"></i></div>
+                            <div class="right-cont">
+                                <h6 class="right-fs">Commercial Real Estate</h6>
+                                <p class="right-fs m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                                    modi, nesciunt maxime nihil aliquam provident odio </p>
+                            </div>
+                        </div>
+                        <div class="p-3 d-flex align-items-center justify-content-center gap-4">
+                            <div class="blue-r bg-primary"><i class="fa-solid fa-handshake"></i></div>
+                            <div class="right-cont">
+                                <h6 class="right-fs">Business Acquisitions</h6>
+                                <p class="right-fs m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                                    modi, nesciunt maxime nihil aliquam provident odio </p>
+                            </div>
+                        </div>
+                        <div class="p-3 d-flex align-items-center justify-content-center gap-4">
+                            <div class="blue-r bg-primary"><i class="fa-regular fa-circle-up"></i></div>
+                            <div class="right-cont">
+                                <h6 class="right-fs">Business Expansion</h6>
+                                <p class="right-fs m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                                    modi, nesciunt maxime nihil aliquam provident odio </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Loan Programs Section End -->
+
+        <!-- Team Section Start -->
+        <section id="team" class="container-fluid container-lg">
+            <div class="pt-md-5 pt-sm-4 pt-3 pb-md-5 pb-sm-4 pb-3">
+                <div class="text-center">
+                    <p class="u-l fw-bold f-w d-inline-block">OUR <span class="text-primary">TEAM</span></p>
+                </div>
+                <div class="mt-2 swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card position-relative overflow-hidden" style="width: 17rem; height: 22rem;">
+                                <img src="IMGs/T-1.png" class="object-fit-cover card-img-top" alt="...">
+                                <div class="center-hover card-body position-absolute text-black">
+                                    <div class="bg-body-secondary  position-absolute w-100 h-100 top-0 start-0"
+                                        id="z_-1"></div>
+                                    <h5 class="m-0">MISS. Sophia Brown</h5>
+                                    <p class="mb-2">Hiring Manager</p>
+                                    <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i><a
+                                        href="tel:1234567890" class="text-black text-decoration-none fw-medium">12 345
+                                        678 90</a><br>
+                                    <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i><a
+                                        href="mailto:HiringManager@gamil.com"
+                                        class="text-black text-decoration-none">HiringManager@gamil.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card position-relative overflow-hidden" style="width: 17rem; height: 22rem;">
+                                <img src="IMGs/T-2.png" class="object-fit-cover card-img-top" alt="...">
+                                <div class="center-hover card-body position-absolute text-black">
+                                    <div class="bg-body-secondary  position-absolute w-100 h-100 top-0 start-0"
+                                        id="z_-1"></div>
+                                    <h5 class="m-0">MR. James Smith</h5>
+                                    <p class="mb-2">CEO</p>
+                                    <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i><a
+                                        href="tel:1234567890" class="text-black text-decoration-none fw-medium">12 345
+                                        678 90</a><br>
+                                    <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i><a
+                                        href="mailto:CEO@gmail.com"
+                                        class="text-black text-decoration-none">CEO@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card position-relative overflow-hidden" style="width: 17rem; height: 22rem;">
+                                <img src="IMGs/T-3.png" class="object-fit-cover card-img-top" alt="...">
+                                <div class="center-hover card-body position-absolute text-black">
+                                    <div class="bg-body-secondary  position-absolute w-100 h-100 top-0 start-0"
+                                        id="z_-1"></div>
+                                    <h5 class="m-0">MISS. Olivia Davis</h5>
+                                    <p class="mb-2">MARKETING OFFICER</p>
+                                    <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i><a
+                                        href="tel:1234567890" class="text-black text-decoration-none fw-medium">12 345
+                                        678 90</a><br>
+                                    <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i><a
+                                        href="mailto:Marketingofflicer@gmail.com"
+                                        class="text-black text-decoration-none">Marketingofflicer@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card position-relative overflow-hidden" style="width: 17rem; height: 22rem;">
+                                <img src="IMGs/T-4.png" class="object-fit-cover card-img-top" alt="...">
+                                <div class="center-hover card-body position-absolute text-black">
+                                    <div class="bg-body-secondary  position-absolute w-100 h-100 top-0 start-0"
+                                        id="z_-1"></div>
+                                    <h5 class="m-0">MR. David Lee</h5>
+                                    <p class="mb-2">Lead Software Engineer</p>
+                                    <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i><a
+                                        href="tel:1234567890" class="text-black text-decoration-none fw-medium">12 345
+                                        678 90</a><br>
+                                    <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i><a
+                                        href="mailto:SoftwareEngineer@gmail.com"
+                                        class="text-black text-decoration-none">SoftEngineer@gamil.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card position-relative overflow-hidden" style="width: 17rem; height: 22rem;">
+                                <img src="IMGs/T-5.png" class="object-fit-cover card-img-top" alt="...">
+                                <div class="center-hover card-body position-absolute text-black">
+                                    <div class="bg-body-secondary  position-absolute w-100 h-100 top-0 start-0"
+                                        id="z_-1"></div>
+                                    <h5 class="m-0">MISS. Sarah Jones</h5>
+                                    <p class="mb-2">Senior Graphic Designer</p>
+                                    <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i><a
+                                        href="tel:1234567890" class="text-black text-decoration-none fw-medium">12 345
+                                        678 90</a><br>
+                                    <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i><a
+                                        href="mailto:GraphicDesigner@gmail.com"
+                                        class="text-black text-decoration-none">GraphicDesigner@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card position-relative overflow-hidden" style="width: 17rem; height: 22rem;">
+                                <img src="IMGs/T-6.png" class="object-fit-cover card-img-top" alt="...">
+                                <div class="center-hover card-body position-absolute text-black">
+                                    <div class="bg-body-secondary  position-absolute w-100 h-100 top-0 start-0"
+                                        id="z_-1"></div>
+                                    <h5 class="m-0">MR. Thomas Rodriguez</h5>
+                                    <p class="mb-2">Head of Accounting</p>
+                                    <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i><a
+                                        href="tel:1234567890" class="text-black text-decoration-none fw-medium">12 345
+                                        678 90</a><br>
+                                    <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i><a
+                                        href="mailto:Accounting@gmail.com"
+                                        class="text-black text-decoration-none">Accounting@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card position-relative overflow-hidden" style="width: 17rem; height: 22rem;">
+                                <img src="IMGs/T-7.png" class="object-fit-cover card-img-top" alt="...">
+                                <div class="center-hover card-body position-absolute text-black">
+                                    <div class="bg-body-secondary  position-absolute w-100 h-100 top-0 start-0"
+                                        id="z_-1"></div>
+                                    <h5 class="m-0">MISS. Isabelle Dubois</h5>
+                                    <p class="mb-2">Project Manager</p>
+                                    <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i><a
+                                        href="tel:1234567890" class="text-black text-decoration-none fw-medium">12 345
+                                        678 90</a><br>
+                                    <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i><a
+                                        href="mailto:ProjectManager@gmail.com"
+                                        class="text-black text-decoration-none">ProjectManager@gamil.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card position-relative overflow-hidden" style="width: 17rem; height: 22rem;">
+                                <img src="IMGs/T-8.png" class="object-fit-cover card-img-top" alt="...">
+                                <div class="center-hover card-body position-absolute text-black">
+                                    <div class="bg-body-secondary  position-absolute w-100 h-100 top-0 start-0"
+                                        id="z_-1"></div>
+                                    <h5 class="m-0">MR. Ethan Miller</h5>
+                                    <p class="mb-2">Web Developer</p>
+                                    <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i><a
+                                        href="tel:1234567890" class="text-black text-decoration-none fw-medium">12 345
+                                        678 90</a><br>
+                                    <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i><a
+                                        href="mailto:WebDeveloper@gmail.com"
+                                        class="text-black text-decoration-none">WebDeveloper@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card position-relative overflow-hidden" style="width: 17rem; height: 22rem;">
+                                <img src="IMGs/T-9.png" class="object-fit-cover card-img-top" alt="...">
+                                <div class="center-hover card-body position-absolute text-black">
+                                    <div class="bg-body-secondary  position-absolute w-100 h-100 top-0 start-0"
+                                        id="z_-1"></div>
+                                    <h5 class="m-0">MISS. Priya Patel</h5>
+                                    <p class="mb-2">Social Media Coordinator</p>
+                                    <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i><a
+                                        href="tel:1234567890" class="text-black text-decoration-none fw-medium">12 345
+                                        678 90</a><br>
+                                    <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i><a
+                                        href="mailto:SocialMediaCoordinator@gmail.com"
+                                        class="text-black text-decoration-none">SocialMediaCoordinator.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="bg-secondary-subtle fa-solid fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="bg-secondary-subtle fa-solid fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Section End -->
+
+        <!-- Contact US Section Start -->
+        <section id="Contact" class="container-fluid  position-relative">
+            <div id="contact-bg" class="position-absolute w-100 h-100 top-0 start-0">
+                <div class="position-absolute bg-dark w-100 h-100 top-0 start-0 opacity-75 " id="z-3">
+                </div>
+            </div>
+            <div class="overflow-hidden container-fluid container-lg">
+                <div class="pt-md-5 pt-sm-4 pt-3 pb-md-5 pb-sm-4 pb-3">
+                    <div class="text-center">
+                        <p class="u-l fw-bold f-w d-inline-block text-white">CONTACT US</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 left">
+                            <div class="contact-logo col-6">
+                                <img src="IMGs/Logo.png" alt="" class="w-100">
+                            </div>
+                            <div class="location">
+                                <a href="#">
+                                    <i class="fa-solid fa-location-dot me-2"></i>
+                                    <p class="d-inline-block fw-bold">MIDAS FINANCIAL GROUP</p>
+                                    <p class="ms-4">123 Lorem, ipsum dolor , Lorem, ipsum dolor. -12345
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mail">
+                                <a href="mailto:inqury@midasfinancialgroup.com">
+                                    <i class="fa-solid fa-envelope me-2"></i>
+                                    <p class="d-inline-block fw-medium">inqury@midasfinancialgroup.com</p>
+                                </a>
+                            </div>
+                            <div class="phone">
+                                <a href="tel:00 123 456 7890">
+                                    <i class="fa-solid fa-phone me-2"></i>
+                                    <p class="d-inline-block fw-medium">00 123 456 7890</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right col-md-6 col-12 d-flex justify-content-end">
+                            <div class="col-lg-8 col-md-10 col-sm-12 col-12">
+                                <form action="" method="get" autocomplete="on">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" id="exampleFormControlInput2"
+                                            placeholder="name@example.com" required>
+                                    </div>
+                                    <select id="select-option" class="form-select mb-3"
+                                        aria-label="Default select example" required>
+                                        <option selected>Inquiry For</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            required placeholder="Enter Messagae"></textarea>
+                                    </div>
+                                    <button type="submit"
+                                        class=" f-s border border-white btn btn-primary">SUBMIT</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact US Section End -->
+
+        <!-- Location Section Start -->
+        <section id="location" class="container-fluid p-0">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.9505158774658!2d72.46950689785464!3d23.031038767734174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b3e4cd25609%3A0x6c0a96187d6d1b99!2sRed%20and%20White%20Multimedia%20Education%20-%20Bopal!5e0!3m2!1sen!2sin!4v1714842256491!5m2!1sen!2sin"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <!-- Location Section End -->
+
+        <!-- Footer Section Start-->
+        <footer id="footer" class="container-fluid bg-primary p-0">
+            <div
+                class="container-fluid container-lg p-3 d-flex justify-content-between align-items-center flex-wrap flex-sm-nowrap gap-2">
+                <div class="">
+                    <p class="text-white m-0 f-s">Copyright © 2024 MIDAS FINANCIAL GROUP,ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="">
+                    <a href="#"><i class="fa-brands fa-facebook text-white me-2"></i></a>
+                    <a href="#"><i class="text-white fa-brands fa-twitter me-2"></i></a>
+                    <a href="#"><i class="text-white fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End-->
+
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- Lordicon CDN -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GSAP ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS -->
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
