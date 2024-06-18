@@ -52,19 +52,7 @@ body {
     z-index: 1;
 }
 
-.navbar-nav>.f-s>.nav-link::after {
-    content: '';
-    display: block;
-    background-color: white;
-    width: 100%;
-    transform: scale(0);
-    height: 2px;
-    transition: all 0.3s linear;
-}
 
-.navbar-nav>.f-s>.nav-link:hover::after {
-    transform: scale(1);
-}
 
 .fa-envelope {
     font-size: 18px;
